@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>메뉴판</title>
+  <head>
+    <script
+      type="text/javascript"
+      id="www-widgetapi-script"
+      src="./js/widgetapi.js"
+      async=""
+    ></script>
+    <script async="" src="./js/clarity.js"></script>
+    <script async="" charset="utf-8" src="./js/dablena.min.js"></script>
+    <script src="./js/dablena-6GKFTLXT.js" async=""></script>
+    <script async="" src="./js/a.js"></script>
+    <script src="./js/b.js" async=""></script>
+    <script async="" src="./js/fbevents.js"></script>
+    <script type="text/javascript" async="" src="./js/iframe_api"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/destination?id=AW-11071122827&amp;l=dataLayer&amp;cx=c"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-F7RWS5RLM4&amp;l=dataLayer&amp;cx=c"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-MXBKF3H"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MXBKF3H");
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="”robots”" content="”noindex,nofollow”" />
+    <title>torder-orderhae-remake</title>
+    <script defer="defer" src="./js/chunk-vendors.16872c76.js"></script>
+    <script defer="defer" src="./js/index.edaeb94f.js"></script>
+    <link href="./css/index.f35841af.css" rel="stylesheet" />
+    <style type="text/css">
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.2s;
+      }
+      .fade-enter,
+      .fade-leave-to {
+        opacity: 0;
+      }
+      .vue3-slider {
+        box-sizing: border-box;
+        width: var(--width, 100%);
+        height: var(--height, 6px);
+        position: relative;
+        margin: 3px 0;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      .vue3-slider[disabled] {
+        cursor: unset;
+      }
+      .vue3-slider.vertical {
+        width: var(--height, 6px);
+        height: var(--width, 100%);
+      }
+      .vue3-slider.vertical .track-filled {
+        width: 100%;
+        bottom: 0;
+        top: auto;
+      }
+      .vue3-slider.vertical .handle {
+        top: unset;
+        bottom: 0;
+        left: 0;
+      }
+      .vue3-slider.vertical .tooltip {
+        bottom: 0;
+        top: auto;
+      }
+      .vue3-slider.circular {
+        height: var(--width, 100%);
+        margin: 0;
+      }
+      .vue3-slider.circular .round-end {
+        position: absolute;
+        margin: 0 auto;
+        width: var(--height, 6px);
+        height: var(--height, 6px);
+        transform: scale(1);
+        left: 0;
+        right: 0;
+        top: calc(var(--height, 6px) * -0.5);
+      }
+      .vue3-slider.circular .handle-container {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .vue3-slider.circular .handle-container .handle {
+        top: calc(var(--height, 6px) * -0.5);
+        width: var(--height, 6px);
+        height: var(--height, 6px);
+        transform: scale(1);
+      }
+      .vue3-slider.circular .handle-container .handle.hover {
+        transform: scale(var(--handle-scale, 1.35));
+      }
+      .vue3-slider.circular .handle-container .tooltip {
+        position: absolute;
+        bottom: auto;
+        left: unset;
+      }
+      .vue3-slider * {
+        -webkit-user-drag: none;
+        -webkit-app-region: no-drag;
+      }
+      .vue3-slider .tooltip {
+        position: absolute;
+        left: 0;
+        height: 25px;
+        background-color: var(--tooltip-color);
+        color: var(--tooltip-text-color);
+        font-family: inherit;
+        padding: 3px 7px;
+        border-radius: 4px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        transition: bottom 0.3s ease, left 0.3s ease, top 0.3s ease,
+          right 0.3s ease;
+      }
+      .vue3-slider .track,
+      .vue3-slider .track-filled {
+        background-color: var(--track-color, rgba(241, 246, 248, 0.156863));
+        width: 100%;
+        height: 100%;
+        border-radius: calc(var(--height, 6px) / 2);
+      }
+      .vue3-slider .track-filled {
+        left: 0;
+        width: auto;
+        opacity: 1;
+      }
+      .vue3-slider .handle,
+      .vue3-slider .track-filled {
+        position: absolute;
+        top: 0;
+        background-color: var(--color, #fb2727);
+      }
+      .vue3-slider .handle {
+        width: var(--height, 6px);
+        height: var(--height, 6px);
+        border-radius: calc(var(--height, 6px) / 2);
+        transform: scale(0);
+        transition: transform 0.2s ease;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .vue3-slider .handle.hover {
+        transform: scale(var(--handle-scale, 1.35));
+      }
+    </style>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11071122827/?random=1722476580101&amp;cv=11&amp;fst=1722476580101&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47v0v9127052698z89105550449za201zb9105550449&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250753&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fdemo2.torder.com%2Fleo%2F&amp;ref=https%3A%2F%2Ftorder.com%2F&amp;top=https%3A%2F%2Ftorder.com%2F&amp;label=lUP6COuD04gYEIvbj58p&amp;hn=www.googleadservices.com&amp;frm=2&amp;tiba=torder-orderhae-remake&amp;npa=0&amp;pscdl=noapi&amp;auid=1319108345.1722476425&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.73%7CChromium%3B127.0.6533.73&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script type="text/javascript" async="" src="./js/synchronizer.js"></script>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MXBKF3H"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <div id="modal"><!----></div>
+    <div id="app" data-v-app="">
+      <div class="layout-container">
+        <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+        <div
+          class="total-wrap"
+          data-v-3a51b6b7=""
+          style="
+            --453663e4: #e30000;
+            --448f6ff4: url(https://demo2.torder.com/img/square.png);
+            --3651ea1f: #e30000;
+            --4592df40: #ffffff;
+          "
+        >
+          <aside class="left-container" data-v-3a51b6b7="">
+            <div class="left-part-background" data-v-3a51b6b7=""></div>
+            <div class="top-side-wrap" data-v-3a51b6b7="">
+              <div class="main-layout-menu-wrap vertical" data-v-3a51b6b7="">
+               <!--  <img
+                  class="main-layout-logo"
+                  src="/img/svg_torderlogo_all_white_82px.ed66d370.svg"
+                  data-v-3a51b6b7=""
+                /> -->
+                <div class="tablet-number" data-v-3a51b6b7="">
+                  <div class="tablet-info" data-v-3a51b6b7="">TEST</div>
+                </div>
+              </div>
+              <div
+                class="main-first-category hyatt layout-main-category"
+                data-v-cd891cf4=""
+                data-v-3a51b6b7=""
+              >
+                <div class="main-first-category-wrap hyatt" data-v-cd891cf4="">
+                  <div
+                    class="main-first-category-wrap-sub hyatt"
+                    data-v-cd891cf4=""
+                  >
+                    <div
+                      class="main-first-category-list-item active black"
+                      data-id="110754"
+                      data-v-569a26f2=""
+                      data-v-cd891cf4=""
+                      style="--2c9e76ae: #e30000"
+                    >
+                      <div class="wrap-content-top" data-v-569a26f2="">
+                        <div class="content-top" data-v-569a26f2=""></div>
+                      </div>
+                      <div class="content-container" data-v-569a26f2="">
+                        <div class="item-content" data-v-569a26f2="">
+                          <span data-v-569a26f2="">메인메뉴</span>
+                        </div>
+                      </div>
+                      <div class="wrap-content-bottom" data-v-569a26f2="">
+                        <div class="content-bottom" data-v-569a26f2=""></div>
+                      </div>
+                    </div>
+                    <div
+                      class="main-first-category-list-item category-list"
+                      data-id="110729"
+                      active="false"
+                      data-v-b2643dac=""
+                      data-v-cd891cf4=""
+                      style="--78880a68: #ffffff"
+                    >
+                      <span data-v-b2643dac="">음료</span>
+                    </div>
+                    <div
+                      class="main-first-category-list-item category-list"
+                      data-id="110727"
+                      active="false"
+                      data-v-b2643dac=""
+                      data-v-cd891cf4=""
+                      style="--78880a68: #ffffff"
+                    >
+                      <span data-v-b2643dac="">디저트</span>
+                    </div>
+                    <div
+                      class="main-first-category-list-item category-list"
+                      data-id="110701"
+                      active="false"
+                      data-v-b2643dac=""
+                      data-v-cd891cf4=""
+                      style="--78880a68: #ffffff"
+                    >
+                      <span data-v-b2643dac="">조식세트</span>
+                    </div>
+                    <div
+                      class="main-first-category-list-item category-list"
+                      data-id="110705"
+                      active="false"
+                      data-v-b2643dac=""
+                      data-v-cd891cf4=""
+                      style="--78880a68: #ffffff"
+                    >
+                      <span data-v-b2643dac="">커피&amp;차</span>
+                    </div>
+                    <div
+                      class="main-first-category-list-item category-list"
+                      data-id="110709"
+                      active="false"
+                      data-v-b2643dac=""
+                      data-v-cd891cf4=""
+                      style="--78880a68: #ffffff"
+                    >
+                      <span data-v-b2643dac="">음료</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-side-wrap" data-v-3a51b6b7="">
+              <div data-v-3a51b6b7="">
+                <div
+                  class="toolbox-advertise-count-staff-call"
+                  data-v-3a51b6b7=""
+                >
+                  직원 호출
+                </div>
+              </div>
+            </div>
+          </aside>
+          <main class="middle-container" data-v-3a51b6b7="">
+            <div class="middle-header" data-v-3a51b6b7="">
+              <div
+                class="main-sub-category hyatt"
+                data-v-1549533f=""
+                data-v-3a51b6b7=""
+              >
+                <div class="main-sub-category-wrap hyatt" data-v-1549533f="">
+                  <div
+                    class="main-sub-category-wrap-sub hyatt"
+                    data-v-1549533f=""
+                  >
+                    <div
+                      class="main-sub-category-container sub-list"
+                      data-id="110754-110757"
+                      data-v-48c8575f=""
+                      data-v-1549533f=""
+                      style="--4092c781: #999999; --aea5cd4a: #e30000"
+                    >
+                      <div
+                        class="main-sub-category-list-item active black"
+                        data-v-48c8575f=""
+                      >
+                        근육질
+                      </div>
+                    </div>
+                    <div
+                      class="main-sub-category-container sub-list"
+                      data-id="110754-110758"
+                      data-v-48c8575f=""
+                      data-v-1549533f=""
+                      style="--4092c781: #999999; --aea5cd4a: #e30000"
+                    >
+                      <div
+                        class="main-sub-category-list-item black"
+                        data-v-48c8575f=""
+                      >
+                        차이나하우스
+                      </div>
+                    </div>
+                    <div
+                      class="main-sub-category-container sub-list"
+                      data-id="110754-110764"
+                      data-v-48c8575f=""
+                      data-v-1549533f=""
+                      style="--4092c781: #999999; --aea5cd4a: #e30000"
+                    >
+                      <div
+                        class="main-sub-category-list-item black"
+                        data-v-48c8575f=""
+                      >
+                        포차8
+                      </div>
+                    </div>
+                    <div
+                      class="main-sub-category-container sub-list"
+                      data-id="110754-110767"
+                      data-v-48c8575f=""
+                      data-v-1549533f=""
+                      style="--4092c781: #999999; --aea5cd4a: #e30000"
+                    >
+                      <div
+                        class="main-sub-category-list-item black"
+                        data-v-48c8575f=""
+                      >
+                        IS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="middle-body" data-v-3a51b6b7="">
+              <div
+                class="product-container hyatt"
+                data-v-b07261e0=""
+                data-v-3a51b6b7=""
+              >
+                <div
+                  id="110754"
+                  class="product-main-category-observe"
+                  data-v-b07261e0=""
+                >
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110754-110757"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          메인메뉴
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          근육질
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450062002/1675414679item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              문어다리 꼬치
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              13,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450062003/1675414681item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              제주 한치 꼬치
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              18,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450063002/1675414661item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              항정살 꼬치
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              12,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066008/1675414644item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              닭날개 꼬치
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              11,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066009/1675414637item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              닭다리살과 대파 꼬치
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              11,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020019/1675414518item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              포차 어묵탕
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              39,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020002/1675414505item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              먹태 구이
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              24,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020003/1675414506item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              매운 닭과 돼지껍데기 볶음
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              25,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020008/1675414513item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              분모자 떡볶이
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              35,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020004/1675414508item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              골뱅이 무침
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              30,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020005/1675414509item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              문어 숙회
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              33,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020021/1675414525item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              납작만두와 뿔소라 무침
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              39,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450090002/1675415182item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              김치전
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              14,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450090001/1675415189item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              해물파전
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              19,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066001/1675415168item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              후라이드 치킨
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              24,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066003/1675415173item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">간마</p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              26,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020017/1675414515item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              모둠 바비큐
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              78,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020018/1675414516item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              포차 갈비
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              48,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450020020/1675414524item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              전복 구이
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              38,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110754-110758"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          메인메뉴
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          차이나하우스
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450063001/1675414654item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              불맛 꼬치
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              12,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110754-110764"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          메인메뉴
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          포차8
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066003/1675415173item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">간마</p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              26,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066001/1675415168item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              후라이드 치킨
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              24,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450066002/1675415170item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">양념</p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              26,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450031249%7C%7C%7C2/1676272283item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110754-110767"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          메인메뉴
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          IS
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450120003/1675414536item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              4인분같은 3인분이요
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              98,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450120002/1675414535item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              안주 플래터 2인
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              58,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="110729"
+                  class="product-main-category-observe"
+                  data-v-b07261e0=""
+                >
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110729-110730"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          음료
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          탄산음료
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155001/1675418922item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              코카콜라 레귤러
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155002/1675418924item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              코카콜라 라이트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155074/1675418925item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              코카콜라 0
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155003/1675418927item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              스프라이트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000154017/1675748699item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              환타 오렌지
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155004/1675418941item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">워터</p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155005/1675418945item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              클럽소다
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155006/1675418948item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              진저에일
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155007/1675418949item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              핫식스세븐에잇
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              6,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155001/1675418922item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              코카콜라 레귤러
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155002/1675418924item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              코카콜라 라이트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155074/1675418925item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              코카콜라 0
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155003/1675418927item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              스프라이트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000154017/1675748699item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              환타 오렌지
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155004/1675418941item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">워터</p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155005/1675418945item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              클럽소다
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155006/1675418948item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              진저에일
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              5,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000155007/1675418949item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              핫식스세븐에잇
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              6,500
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110729-110731"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          음료
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          주스 &amp; 물
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000151013/1675418960item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              자몽 주스
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              13,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160010/1675418962item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              삼다수 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              4,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160003/1675418966item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아쿠아 파나 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              6,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160004/1675418967item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아쿠아 파나 750ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              9,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160001/1675418968item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              산 펠레그리노 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              6,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160002/1675418970item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              산 펠레그리노 750ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              9,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110729-110732"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          음료
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          커피
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/torder_test/goods/CJUGH-000171002/1680167859item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아메리카노44
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171005/1675418999item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              카페 라떼
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171009/1675418993item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아이스 아메리카노
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171010/1676440736item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아이스 카페 라떼
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171011/1675419009item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아이스 카푸치노
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171001/1676247625item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              에스프레소
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171003/1676247614item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              더블 에스프레소
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110729-110733"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          음료
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          차
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000173018/1675419018item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              잉글리시 브랙퍼스트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000173017/1675419020item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              얼그레이
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000173014/1675419022item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              캐모마일
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000173015/1675419024item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              페퍼민트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000173004/1675419026item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              제주 녹차 세작
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              15,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="110727"
+                  class="product-main-category-observe"
+                  data-v-b07261e0=""
+                >
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110727-110728"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          디저트
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          빙수
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450105006/1675415248item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              커스타드 튀김
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              13,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450105005/1675415251item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              옛날 빙수
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              24,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450105003/1675415252item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              과일 플래터
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              24,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="110701"
+                  class="product-main-category-observe"
+                  data-v-b07261e0=""
+                >
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110701-110702"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          조식세트
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          　
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/torder_test/goods/CJUGH-450031249%7C%7C%7C1/1681953073item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트1
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450031249%7C%7C%7C2/1676272283item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450031249%7C%7C%7C4/1676272292item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450031249%7C%7C%7C5/1676272294item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450031249%7C%7C%7C6/1676272296item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-450031249%7C%7C%7C7/1676272297item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              조식세트
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              60,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="110705"
+                  class="product-main-category-observe"
+                  data-v-b07261e0=""
+                >
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110705-110707"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          커피&amp;차
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          아이스 커피
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171009/1675418993item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!---->
+                            <div class="sold-out-wrap" data-v-bf19ccbc="">
+                              <span class="sold-out-text" data-v-bf19ccbc=""
+                                >품절</span
+                              >
+                            </div>
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아이스 아메리카노
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171010/1676440736item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아이스 카페 라떼
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000171011/1675419009item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아이스 카푸치노
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              10,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="110709"
+                  class="product-main-category-observe"
+                  data-v-b07261e0=""
+                >
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110709-110713"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          음료
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          맥주
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/torder_test/goods/CJUGH-000233006/1684394826_700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              생맥주 제주 위트에일 1,000ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              23,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000231016/1675419055item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              기린 이치방 330ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              14,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000233001/1675419037item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              생맥주 클라우드 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              11,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/torder_test/goods/t-%3ECJUGH-000233001/1679897288item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              t-&gt;생맥주 클라우드 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">0</p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000233005/1675495781item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              생맥주 클라우드 1,000ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              18,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div
+                            class="product-img-wrap empty"
+                            data-v-bf19ccbc=""
+                          >
+                           <!--  <img
+                              class="product-img"
+                              src="/img/logo_white_82x39.e0ce5095.svg"
+                              data-v-bf19ccbc=""
+                            /> --><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              t-&gt;생맥주 클라우드 1,000ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">0</p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000233002/1675419044item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              생맥주 제주 위트에일 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              13,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000231011/1675419051item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              테라 330ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              9,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000231001/1675419053item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              칭타오 330ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              14,000
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="product-sub-category product-sub-category-observe black"
+                    id="110709-110712"
+                    data-v-6962b8ab=""
+                    data-v-b07261e0=""
+                  >
+                    <div class="product-list-wrap" data-v-6962b8ab="">
+                      <div class="product-category-wrap" data-v-6962b8ab="">
+                        <div class="main-category-name" data-v-6962b8ab="">
+                          음료
+                        </div>
+                        <div class="sub-category-name" data-v-6962b8ab="">
+                          물
+                        </div>
+                      </div>
+                      <div class="product-list" data-v-6962b8ab="">
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160004/1675418967item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아쿠아 파나 750ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              9,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160003/1675418966item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              아쿠아 파나 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              6,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160001/1675418968item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              산 펠레그리노 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              6,500
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160002/1675418970item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              산 펠레그리노 750ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              9,000
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="product-item-wrap hyatt black"
+                          data-v-bf19ccbc=""
+                          data-v-b07261e0=""
+                          data-v-6962b8ab-s=""
+                          style="--7a1c9780: #999999"
+                        >
+                          <div class="product-img-wrap" data-v-bf19ccbc="">
+                            <img
+                              class="product-img"
+                              src="https://hyatt.static.torder.co.kr/INFRA_POC002/goods/CJUGH-000160010/1675418962item_700X700.png"
+                              data-v-bf19ccbc=""
+                            /><!----><!---->
+                            <div class="product-label-wrap" data-v-bf19ccbc="">
+                              <!----><!---->
+                            </div>
+                          </div>
+                          <div class="product-info-wrap" data-v-bf19ccbc="">
+                            <p class="product-name" data-v-bf19ccbc="">
+                              삼다수 500ml
+                            </p>
+                            <p class="product-price" data-v-bf19ccbc="">
+                              4,500
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-v-3a51b6b7="">
+              <div
+                class="bottom-navbar"
+                data-v-76d5581b=""
+                data-v-3a51b6b7=""
+                style="--354b3493: 81.5%; --629a9be9: #e30000"
+              >
+                <div class="select-language-wrap" data-v-76d5581b="">
+                  <ul
+                    class="language-list hyatt"
+                    data-v-c0e0efa6=""
+                    data-v-76d5581b=""
+                    style="--7f929882: #999999; --9f1b41ce: #e30000"
+                  >
+                    <li
+                      class="language-item active-style first-lang"
+                      data-v-c0e0efa6=""
+                    >
+                      한국어
+                    </li>
+                    <li class="language-item" data-v-c0e0efa6="">English</li>
+                    <li class="language-item" data-v-c0e0efa6="">简体</li>
+                    <li class="language-item" data-v-c0e0efa6="">繁體</li>
+                    <li class="language-item" data-v-c0e0efa6="">日本語</li>
+                  </ul>
+                </div>
+                <div class="button-container" data-v-76d5581b="">
+                  <button
+                    type="button"
+                    class="bottom-bar-button"
+                    data-v-35b0e91a=""
+                    data-v-76d5581b=""
+                    style="--f084be0e: #ffffff; --26df888c: #e30000"
+                  >
+                    주문내역</button
+                  ><button
+                    type="button"
+                    class="bottom-bar-button"
+                    data-v-35b0e91a=""
+                    data-v-76d5581b=""
+                    style="--f084be0e: #ffffff; --26df888c: #e30000"
+                  >
+                    장바구니
+                  </button>
+                  <div class="cart-quantity" data-v-76d5581b="">2</div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <aside class="right-container" data-v-3a51b6b7="">
+            <div
+              class="cart-container hyatt"
+              data-v-973b8ff0=""
+              data-v-4fca6c5a=""
+              style="--56fbf798: #ffffff; --f7e149ec: #e30000; display: none"
+            >
+              <div class="cart-body-wrap" data-v-973b8ff0="">
+                <ul class="cart-list" data-v-973b8ff0="">
+                  <li
+                    class="cart-item"
+                    data-cy-min="0"
+                    data-cy-max="0"
+                    data-v-448ff40f=""
+                    data-v-4fca6c5a=""
+                    data-v-973b8ff0-s=""
+                  >
+                    <div class="cart-item-top" data-v-448ff40f="">
+                      <div class="name" data-v-448ff40f="">항정살 꼬치</div>
+                      <div class="delete" data-v-448ff40f="">삭제</div>
+                    </div>
+                    <div class="cart-item-mid" data-v-448ff40f="">
+                      <div class="price" data-v-448ff40f="">12,000</div>
+                      <!---->
+                    </div>
+                    <div class="cart-item-bottom" data-v-448ff40f="">
+                      <div class="cart-item-control" data-v-448ff40f="">
+                        <img
+                          src="/img/icn_minus_only_white_60x60.609f430e.svg"
+                          data-v-448ff40f=""
+                        />
+                      </div>
+                      <div class="quantity" data-v-448ff40f="">1개</div>
+                      <div class="cart-item-control" data-v-448ff40f="">
+                        <img
+                          src="/img/icn_plus_only_white_60x60.995b60d3.svg"
+                          data-v-448ff40f=""
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="cart-item"
+                    data-cy-min="0"
+                    data-cy-max="0"
+                    data-v-448ff40f=""
+                    data-v-4fca6c5a=""
+                    data-v-973b8ff0-s=""
+                  >
+                    <div class="cart-item-top" data-v-448ff40f="">
+                      <div class="name" data-v-448ff40f="">제주 한치 꼬치</div>
+                      <div class="delete" data-v-448ff40f="">삭제</div>
+                    </div>
+                    <div class="cart-item-mid" data-v-448ff40f="">
+                      <div class="price" data-v-448ff40f="">18,000</div>
+                      <!---->
+                    </div>
+                    <div class="cart-item-bottom" data-v-448ff40f="">
+                      <div class="cart-item-control" data-v-448ff40f="">
+                        <img
+                          src="/img/icn_minus_only_white_60x60.609f430e.svg"
+                          data-v-448ff40f=""
+                        />
+                      </div>
+                      <div class="quantity" data-v-448ff40f="">1개</div>
+                      <div class="cart-item-control" data-v-448ff40f="">
+                        <img
+                          src="/img/icn_plus_only_white_60x60.995b60d3.svg"
+                          data-v-448ff40f=""
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cart-footer-wrap" data-v-973b8ff0="">
+                <div class="cart-info" data-v-973b8ff0="">
+                  <div class="total-price-wrap" data-v-973b8ff0="">
+                    <div class="total-price-text" data-v-973b8ff0="">합계</div>
+                    <div class="total-price" data-v-973b8ff0="">30,000</div>
+                  </div>
+                </div>
+                <div class="cart-button" data-v-973b8ff0="">
+                  <div class="close" data-v-973b8ff0="">닫기</div>
+                  <div class="order" data-v-973b8ff0="">주문하기</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" id="" src="./js/wcslog.js"></script>
+    <script
+      type="text/javascript"
+      id=""
+      charset="UTF-8"
+      src="./js/kp.js"
+    ></script>
+    <script type="text/javascript" id="">
+      !(function (b, e, f, g, a, c, d) {
+        b.fbq ||
+          ((a = b.fbq =
+            function () {
+              a.callMethod
+                ? a.callMethod.apply(a, arguments)
+                : a.queue.push(arguments);
+            }),
+          b._fbq || (b._fbq = a),
+          (a.push = a),
+          (a.loaded = !0),
+          (a.version = "2.0"),
+          (a.queue = []),
+          (c = e.createElement(f)),
+          (c.async = !0),
+          (c.src = g),
+          (d = e.getElementsByTagName(f)[0]),
+          d.parentNode.insertBefore(c, d));
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "253845987064015");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=253845987064015&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+
+    <script
+      type="text/javascript"
+      id=""
+      src="./js/karrot-pixel.umd.js"
+    ></script>
+    <script type="text/javascript" id="">
+      (function (a, e, b, f, g, c, d) {
+        a[b] =
+          a[b] ||
+          function () {
+            (a[b].q = a[b].q || []).push(arguments);
+          };
+        c = e.createElement(f);
+        c.async = 1;
+        c.src = "https://www.clarity.ms/tag/" + g + "?ref\x3dgtm2";
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(c, d);
+      })(window, document, "clarity", "script", "lcqvwwxkd3");
+    </script>
+    <script type="text/javascript" id="">
+      (function (b, e, c, f, a, d) {
+        b[c] =
+          b[c] ||
+          function () {
+            (b[c].q = b[c].q || []).push(arguments);
+          };
+        a = e.createElement(f);
+        a.async = 1;
+        a.charset = "utf-8";
+        a.src = "//static.dable.io/dist/dablena.min.js";
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(a, d);
+      })(window, document, "dablena", "script");
+      dablena("init", "001-010-813");
+      dablena("track", "PageView");
+    </script>
+    <iframe
+      allow="join-ad-interest-group"
+      data-tagging-id="AW-11071122827/lUP6COuD04gYEIvbj58p"
+      data-load-time="1722476580103"
+      height="0"
+      width="0"
+      src="https://td.doubleclick.net/td/rul/11071122827?random=1722476580101&amp;cv=11&amp;fst=1722476580101&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47v0v9127052698z89105550449za201zb9105550449&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250753&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fdemo2.torder.com%2Fleo%2F&amp;ref=https%3A%2F%2Ftorder.com%2F&amp;top=https%3A%2F%2Ftorder.com%2F&amp;label=lUP6COuD04gYEIvbj58p&amp;hn=www.googleadservices.com&amp;frm=2&amp;tiba=torder-orderhae-remake&amp;npa=0&amp;pscdl=noapi&amp;auid=1319108345.1722476425&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.73%7CChromium%3B127.0.6533.73&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1"
+      style="display: none; visibility: hidden"
+      data-gtm-yt-inspected-16="true"
+    ></iframe>
+
+    <script type="text/javascript" id="">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add.wa = "s_5a31610d94c8";
+      if (!_nasa) var _nasa = {};
+      window.wcs && (wcs.inflow(), wcs_do(_nasa));
+    </script>
+
+    <script type="text/javascript" id="">
+      kakaoPixel("8742013564569733977").pageView();
+    </script>
+    <script type="text/javascript" id="">
+      window.karrotPixel.init("1702955097729300001");
+      window.karrotPixel.track("ViewPage");
+    </script>
+  </body>
+</html>
